@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body ng-app="datatablesSampleApp">
-<table datatable="" class="row-border hover" width="50em">
+<div>
+<table datatable="1" class="row-border hover" width="50em">
     <thead>
     <tr>
         <th>ID</th>
@@ -37,5 +38,10 @@
     </tr>
     </tbody>
 </table>	
+</div>
+<br/><br/>
+<div ng-controller="withAjaxCtrl">
+    <table datatable="2" dt-options="dtOptions" dt-columns="dtColumns" class="row-border hover"></table>
+</div>
 </body>
 </html>
